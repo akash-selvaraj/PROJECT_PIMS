@@ -1,0 +1,126 @@
+<!DOCTYPE html5>
+<html >
+    <head>
+        <title>PIMP-ADD DATA</title>
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e0c887;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ababb0;
+}
+
+.active {
+  background-color: #13126e;
+}
+th, td {
+  border: 1px 
+  border-spacing:30px;
+  border-radius: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px; 
+}
+tr:nth-child(odd) {
+  background-color: #bfc9db;
+}
+tr:nth-child(even) {
+  background-color: #bfc9db;
+}
+form-submit-button {
+	background: #16254d;
+	color: white;
+	border-style: double;
+	border-color: #16254d;
+	height: 50px;
+	width: 100px;
+	font: bold35px arial,sans-serif;
+	text-shadow: none;
+}
+</style>
+    <body style="background-color: #bfc9db">
+        <img src="logo.png" width="150px"><strong style="font-size: 36px">&ensp;PERSONAL INFORMATION MANAGEMENT PROTOCOL</strong><br>
+    <form action="insert.php" method="POST" autocomplete="on">
+    
+        <br />
+<ul>
+  <li><a href="search.html" style="color: #030238">Home</a></li>
+  <li><a class="active" href="insert.html">Add</a></li>
+  <li style=><a href="del_data.html"style="color: #800511">Delete</a></li>
+</ul>
+        <p><table style="width: =95% border-spacing: =400px">
+            <tr>
+       <td> <label for="sname" style="font-size:=32px">Name:</label>
+        <input type="text" name="sname" style="background-color:#f0e9c7 " placeholder="ENTER YOUR NAME HERE" required /></span></td>
+        <td><label for="roll">University Registration Number:</label>
+        <input type="text" name="roll" placeholder="ENTER YOUR University Registration Number :" style="background-color:#f0e9c7"  required /></td>
+    </tr>
+        <tr>
+        <td><label for="department">Select your Department:</label>
+        <select name="department" style="background-color:#f0e9c7" required>
+            <option value="Select your department" selected disabled>Select your department</option>
+            <option value="Artificial Intelligence and data science">Artificial Intelligence and data science</option>
+            <option value="Automobile Engineering">Automobile Engineering</option>
+            <option value="Bio Technology">Bio Technology</option>
+            <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+            <option value="Electronics and communcation Engineering">Electronics and communcation Engineering</option>
+            <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Marine Engineering">Marine Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+        </select></td>
+
+        <td><label for="gender">Gender:</label>
+
+        <input type="radio" name="gender" value="male"  style="background-color:#f0e9c7"/>
+        <label for="male">male</label>
+        <input type="radio" name="gender" value="female" style="background-color:#f0e9c7"/>
+        <label for="female">female</label></td>
+        </tr>
+        <tr><td><label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" style="background-color:#f0e9c7" required/></td>
+        <br />
+       <td> <label for="semester">Semester:</label>
+        <input type="number" name="semester" min="1" max="8" style="background-color:#f0e9c7" required /></td></tr>
+        <br />
+        <tr>
+     <tr>
+        <td><label for="address">Address :<textarea name ="address" style="background-color:#f0e9c7"></textarea></td>
+        <td>
+        <label for="mobile">Mobile (+91):</label>
+        <input type="text" name="mobile" placeholder="Mobile Number"  style="background-color:#f0e9c7" required /></td>
+        <td>
+        <label for="email">E-Mail:</label>
+        <input type="email" name="email" placeholder="email here" style="background-color:#f0e9c7"required /></td>
+        </tr></table></p>
+        <br />
+        <p>
+        <div align="center">
+        	<input type="submit" value="Submit" style="background-color: #16254d;color: white;border-style: outset;border-color: #16254d;border-radius: 15%;height: 50px;width: 100px;font: bold15px arial,sans-serif;text-shadow: none;align-items: center;" />&ensp;        	
+          <input type="reset" name="Clear" style="background-color: #800511;border-radius: 15%; color:#f7f9fc ;border-style: outset;border-color: #800511;height: 50px;width: 100px;font: bold25px arial,sans-serif;text-shadow: none;align-items: center;">
+        </p></div>
+    </form>
+    
+</body>
+</html>

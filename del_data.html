@@ -1,0 +1,75 @@
+<!DOCTYPE html5>
+<html >
+    <head>
+        <title>PIMP-DELETE DATA</title>
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e0c887;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ababb0;
+}
+
+.active {
+  background-color: #4a0108;
+}
+
+form-submit-button {
+	background: #4a0108;
+	color: white;
+	border-style: double;
+	border-color: #4a0108;
+	height: 50px;
+	width: 100px;
+  display: inline-block;
+  animation: paused;
+  margin: 4px 2px;
+  border-radius: 25%;
+	font: bold35px arial,sans-serif;
+	text-shadow: none;
+}
+</style>
+    <body style="background-color: #bfc9db">
+        <img src="logo.png" width="150px"><strong style="font-size: 36px">&ensp;PERSONAL INFORMATION MANAGEMENT PROTOCOL</strong><br>
+    <form action="del_data.php" method="POST" autocomplete="on">
+    
+        <br />
+<ul>
+  <li><a href="search.html" style="color: #030238">Home</a></li>
+  <li><a  href="insert.html" style="color: #030238">Add</a></li>
+  <li style=><a class="active" href="del_data.html">Delete</a></li>
+</ul><br><br><br><br><br>
+        <div align="center">
+        <h2 style="font-size:=32px">ENTER UNIVERSITY REGISTER NUMBER TO DELETE</h><br><br><br>
+        <input type="text" name="roll" style="width: 50%;height: 30px;background-color:#f0e9c7" placeholder="ENTER REG NO HERE" required />
+        </div>
+        <br><br><br><br>
+        <div align="center">
+        	<input type="submit" value="Confirm" style="background-color: #4a0108;color: white;border-style: outset;border-color: #4a0108;height: 50px;width: 100px;border-radius: 15%;font: bold15px arial,sans-serif;text-shadow: none;" />
+          &ensp;        	
+          <input type="reset" name="Clear" style="background-color: #800511;border-radius: 15%; color:#f7f9fc ;border-style: outset;border-color: #800511;height: 50px;width: 100px;font: bold25px arial,sans-serif;text-shadow: none;align-items: center;">
+        </p></div>
+    </form>
+    
+</body>
+</html>
